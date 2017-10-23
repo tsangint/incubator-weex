@@ -20,22 +20,23 @@
     // Override point for customization after application launch.
     
     //业务配置，非必需
-    [WXAppConfiguration setAppGroup:@"AliApp"];
-    [WXAppConfiguration setAppName:@"WeexDemo"];
+    [WXAppConfiguration setAppGroup:@"KsApp"];
+    [WXAppConfiguration setAppName:@"KSWeexDemo"];
     [WXAppConfiguration setAppVersion:@"1.0.0"];
     
     //初始化SDK环境
-    [WXSDKEngine initSDKEnviroment];
+//    [WXSDKEngine initSDKEnviroment];
+    [WXSDKEngine initSDKEnvironment];
     
     //注册自定义module和component，非必需
-    [WXSDKEngine registerComponent:@"MyView" withClass:[ViewController class]];
+//    [WXSDKEngine registerComponent:@"MyView" withClass:[ViewController class]];
 //    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
     
     //注册协议的实现类，非必需
 //    [WXSDKEngine registerHandler:[WXNavigationDefaultImpl new] withProtocol:@protocol(WXNavigationProtocol)];
     
     //设置Log输出等级：调试环境默认为Debug，正式发布会自动关闭。
-//    [WXLog setLogLevel:WXLogLevelVerbose];
+    [WXLog setLogLevel:WXLogLevelAll];
     
     return YES;
 }

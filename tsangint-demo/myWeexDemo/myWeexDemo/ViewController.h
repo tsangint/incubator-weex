@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WeexSDK/WXSDKInstance.h>
 
 @interface ViewController : UIViewController
 

@@ -38,6 +38,7 @@
 #import "WXUtility.h"
 #import "WXExtendCallNativeManager.h"
 #import "WXExceptionUtils.h"
+#import "WXWebSocketModule.h"
 
 @implementation WXSDKEngine
 
@@ -60,7 +61,7 @@
     [self registerModule:@"canvas" withClass:NSClassFromString(@"WXCanvasModule")];
     [self registerModule:@"picker" withClass:NSClassFromString(@"WXPickerModule")];
     [self registerModule:@"meta" withClass:NSClassFromString(@"WXMetaModule")];
-    [self registerModule:@"webSocket" withClass:NSClassFromString(@"WXWebSocketModule")];
+//    [self registerModule:@"webSocket" withClass:NSClassFromString(@"WXWebSocketModule")];
     [self registerModule:@"voice-over" withClass:NSClassFromString(@"WXVoiceOverModule")];
 }
 

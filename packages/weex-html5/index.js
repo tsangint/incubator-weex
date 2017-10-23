@@ -1,4 +1,4 @@
-(this.nativeLog || function(s) {console.log(s)})('START WEEX HTML5: 0.5.0, Build 2017-10-21 22:28.');
+(this.nativeLog || function(s) {console.log(s)})('START WEEX HTML5: 0.5.0, Build 2017-10-23 19:33.');
 ;(this.getJSFMVersion = function(){return "0.22.4"});
 var global = this, process = { env: {} };var setTimeout = global.setTimeout;
 
